@@ -1,1 +1,19 @@
 theme: jekyll-theme-cayman
+<html>
+<script type="text/javascript">
+Liferay.bind(
+        'updating',
+        function(event) 
+        {
+              alert("changes");
+            document.getElementById("contentList").innerHTML = "";
+            jQuery("#contentList").load('https://sjquiltmuseum.z2systems.com/np/clients/sjquiltmuseum/donation.jsp?campaign=21&test=true');
+        }
+     );
+</script>
+
+<form>
+        <div id="contentList">
+        </div>
+    </form>
+</html>
