@@ -35,3 +35,23 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+<html>
+<script type="text/javascript">
+Liferay.bind(
+        'updating',
+        function(event) 
+        {
+              alert("changes");
+            document.getElementById("contentList").innerHTML = "";
+            jQuery("#contentList").load('https://sjquiltmuseum.z2systems.com/np/clients/sjquiltmuseum/donation.jsp?campaign=21&test=true');
+        }
+     );
+</script>
+
+<form>
+        <div id="contentList">
+        </div>
+    </form>
+</html>
